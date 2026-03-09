@@ -1,7 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
+import { useAuth } from '../context/AuthContext';
 
 export function HomeScreen({ navigation }: any) {
+  const { signOut } = useAuth();
   const impacto = 50;
   const colorFondo = impacto > 70 ? '#ff4d4d' : '#2ecc71';
 
@@ -16,6 +18,14 @@ export function HomeScreen({ navigation }: any) {
       <Button 
         title="Ir a registrar actividad" 
         onPress={() => navigation.navigate('Registro')} 
+      />
+
+      <View style={{ height: 20 }} />
+
+      <Button 
+        title="Cerrar Sesión" 
+        onPress={signOut} 
+        color='red'
       />
     </View>
   );

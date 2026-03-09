@@ -29,8 +29,18 @@ export const CustomInput = ({ label, value, onChangeText, placeholder, error, ke
 };
 
 const styles = StyleSheet.create({
-  container: { width: '100%', marginBottom: 15 },
-  label: { fontSize: 16, fontWeight: 'bold', marginBottom: 5, color: '#2D6A4F' },
+  container: { 
+    width: '100%', 
+    marginBottom: 15 
+  },
+    
+  label: { 
+    fontSize: 16, 
+    fontWeight: 'bold', 
+    marginBottom: 5, 
+    color: '#2d6a44' 
+  },
+
   input: {
     borderWidth: 1,
     borderColor: '#CCC',
@@ -38,6 +48,13 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: '#F9F9F9',
   },
-  borderError: { borderColor: '#E63946' },
-  errorText: { color: '#E63946', fontSize: 12, marginTop: 5 }
+  borderError: { 
+    borderColor: '#E63946' 
+  },
+
+  errorText: { 
+    color: '#E63946', 
+    fontSize: 12, 
+    marginTop: 5 
+  }
 });

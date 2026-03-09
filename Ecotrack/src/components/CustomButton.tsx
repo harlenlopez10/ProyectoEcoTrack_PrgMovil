@@ -14,7 +14,7 @@ export const CustomButton = ({ title, onPress }: Props) => (
 
 const styles = StyleSheet.create({
   button: { 
-    backgroundColor: '#2D6A4F', 
+    backgroundColor: '#007820', 
     padding: 15, 
     borderRadius: 10, 
     alignItems: 'center' },
